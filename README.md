@@ -74,6 +74,7 @@ edukit/
 ├── db.sqlite3
 ├── manage.py
 └── README.md
+```
 
 ## 📸 Screenshots
 
