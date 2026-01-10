@@ -1,0 +1,73 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}C++ Roadmap{% endblock %}
+
+{% block content %}
+
+<h2>C++ Roadmap</h2>
+
+<!-- 🔹 C++ OVERVIEW -->
+<div class="section-box">
+    <h3>Overview</h3>
+    <p>
+        C++ is a high-performance programming language widely used in
+        game development, competitive programming, system software,
+        and real-time applications. It combines low-level memory control
+        with object-oriented and modern programming features.
+    </p>
+</div>
+
+<!-- 🔹 C++ LEARNING ROADMAP -->
+<div class="section-box">
+    <h3>Learning Roadmap</h3>
+
+    <ul class="roadmap-list">
+        <li>C++ Basics & Program Structure</li>
+        <li>Data Types, Operators & Control Flow</li>
+        <li>Functions & Pointers</li>
+        <li>Object-Oriented Programming (Classes, Inheritance)</li>
+        <li>STL (Vectors, Maps, Sets)</li>
+        <li>Memory Management & Smart Pointers</li>
+        <li>DSA with C++</li>
+        <li>Mini & Major Projects</li>
+    </ul>
+</div>
+
+<!-- 🔹 CAREER STREAMS -->
+<div class="section-box">
+    <h3>Career Streams After C++</h3>
+
+    <div class="stream-cards">
+
+        <div class="stream-card">
+            <h4>Software Engineer</h4>
+            <p>Build high-performance software applications.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Game Developer</h4>
+            <p>Develop game engines and real-time systems.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Competitive Programmer</h4>
+            <p>Solve complex algorithmic problems efficiently.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>System Software Developer</h4>
+            <p>Work on compilers, OS modules, and system tools.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- 🔹 NAVIGATION -->
+<div class="slide-nav">
+    <a href="{% url 'c_roadmap' %}" class="nav-btn">← C</a>
+    <a href="{% url 'home' %}" class="nav-btn">Back to Dashboard</a>
+    <a href="{% url 'react_roadmap' %}" class="nav-btn">Next: React →</a>
+</div>
+
+{% endblock %}

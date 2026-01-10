@@ -1,0 +1,48 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Settings{% endblock %}
+
+{% block content %}
+
+<div class="settings-container">
+
+    <h2 class="settings-title">Settings</h2>
+    <p class="settings-subtitle">
+        Manage your account and authentication options
+    </p>
+
+    {% if user.is_authenticated %}
+
+        <div class="settings-item">
+            <span class="settings-label">Logged in as</span>
+            <span class="settings-user">{{ user.username }}</span>
+        </div>
+
+        <div class="settings-item">
+            <span class="settings-label">Account</span>
+            <a href="{% url 'logout' %}" class="settings-btn logout-btn">
+                Logout
+            </a>
+        </div>
+
+    {% else %}
+
+        <div class="settings-item">
+            <span class="settings-label">Login</span>
+            <a href="{% url 'login' %}" class="settings-btn login-btn">
+                Login
+            </a>
+        </div>
+
+        <div class="settings-item">
+            <span class="settings-label">Create Account</span>
+            <a href="{% url 'signup' %}" class="settings-btn signup-btn">
+                Sign Up
+            </a>
+        </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

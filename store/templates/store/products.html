@@ -1,0 +1,52 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Products{% endblock %}
+
+{% block content %}
+
+<h2 class="products-title">Our Products</h2>
+<p class="products-subtitle">
+    Explore structured learning roadmaps for different technologies.
+</p>
+
+<ul class="product-list">
+
+    <li>
+        <a href="{% url 'python_roadmap' %}">Python</a>
+        <span>Data Science, AI, Automation</span>
+        <span class="badge">Beginner Friendly</span>
+    </li>
+
+    <li>
+        <a href="{% url 'java_roadmap' %}">Java</a>
+        <span>Backend & Enterprise</span>
+        <span class="badge">Popular</span>
+    </li>
+
+    <li>
+        <a href="{% url 'web_roadmap' %}">Web Development</a>
+        <span>HTML, CSS, JS, Backend</span>
+        <span class="badge">Full Stack</span>
+    </li>
+
+    <li>
+        <a href="{% url 'react_roadmap' %}">React</a>
+        <span>Frontend UI</span>
+        <span class="badge">Trending</span>
+    </li>
+
+    <li>
+        <a href="{% url 'sql_roadmap' %}">SQL</a>
+        <span>Databases & Analytics</span>
+        <span class="badge">Essential</span>
+    </li>
+
+    <li>
+        <a href="{% url 'r_roadmap' %}">R Programming</a>
+        <span>Statistics & Research</span>
+        <span class="badge">Analytics</span>
+    </li>
+
+</ul>
+
+{% endblock %}

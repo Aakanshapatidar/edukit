@@ -1,0 +1,75 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}Python Roadmap{% endblock %}
+
+{% block content %}
+
+<h2>Python Roadmap</h2>
+
+<!-- 🔹 PYTHON OVERVIEW -->
+<div class="section-box">
+    <h3>Overview</h3>
+    <p>
+        Python is a high-level, beginner-friendly programming language widely used in
+        web development, data science, artificial intelligence, automation, and cybersecurity.
+        Its simple syntax and powerful libraries make it one of the most popular languages today.
+    </p>
+</div>
+
+<!-- 🔹 PYTHON ROADMAP -->
+<div class="section-box">
+    <h3>Learning Roadmap</h3>
+
+    <ul class="roadmap-list">
+        <li>Python Basics (syntax, variables, data types)</li>
+        <li>Control Flow (if, loops)</li>
+        <li>Functions & Modules</li>
+        <li>Object-Oriented Programming (OOP)</li>
+        <li>Libraries (NumPy, Pandas)</li>
+        <li>Mini & Major Projects</li>
+    </ul>
+</div>
+
+<!-- 🔹 CAREER STREAMS -->
+<div class="section-box">
+    <h3>Career Streams After Python</h3>
+
+    <div class="stream-cards">
+
+        <div class="stream-card">
+            <h4>Data Science</h4>
+            <p>Work with data analysis, statistics, and machine learning.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Web Development</h4>
+            <p>Build backend systems using Django or Flask.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>AI / Machine Learning</h4>
+            <p>Create intelligent systems and predictive models.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Automation</h4>
+            <p>Automate tasks, scripts, and workflows.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Cybersecurity</h4>
+            <p>Security scripting and ethical hacking tools.</p>
+        </div>
+
+    </div>
+</div>
+<!-- 🔹 NAVIGATION -->
+<div class="slide-nav">
+    
+    <a href="{% url 'home' %}" class="nav-btn">Back to Dashboard</a>
+    <a href="{% url 'java_roadmap' %}" class="nav-btn">Next: java →</a>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}C Programming Roadmap{% endblock %}
+
+{% block content %}
+
+<h2>C Programming Roadmap</h2>
+
+<!-- 🔹 C OVERVIEW -->
+<div class="section-box">
+    <h3>Overview</h3>
+    <p>
+        C is a powerful, low-level programming language that forms the foundation
+        of modern programming. It is widely used in operating systems, embedded systems,
+        compilers, and performance-critical applications. Learning C strengthens
+        problem-solving and core programming concepts.
+    </p>
+</div>
+
+<!-- 🔹 C LEARNING ROADMAP -->
+<div class="section-box">
+    <h3>Learning Roadmap</h3>
+
+    <ul class="roadmap-list">
+        <li>Introduction to C & Program Structure</li>
+        <li>Data Types, Variables & Operators</li>
+        <li>Control Statements (if, switch, loops)</li>
+        <li>Functions & Recursion</li>
+        <li>Arrays & Strings</li>
+        <li>Pointers & Memory Management</li>
+        <li>Structures & Unions</li>
+        <li>File Handling</li>
+        <li>Mini & Major Projects</li>
+    </ul>
+</div>
+
+<!-- 🔹 CAREER STREAMS -->
+<div class="section-box">
+    <h3>Career Streams After C</h3>
+
+    <div class="stream-cards">
+
+        <div class="stream-card">
+            <h4>Embedded Systems Engineer</h4>
+            <p>Develop firmware and low-level software for hardware devices.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>System Programmer</h4>
+            <p>Work on operating systems, compilers, and system software.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Game Developer</h4>
+            <p>Build performance-critical components of game engines.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>IoT Developer</h4>
+            <p>Create software for IoT and microcontroller-based systems.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- 🔹 NAVIGATION -->
+<div class="slide-nav">
+    <a href="{% url 'java_roadmap' %}" class="nav-btn">← Java</a>
+    <a href="{% url 'home' %}" class="nav-btn">Back to Dashboard</a>
+    <a href="{% url 'cpp_roadmap' %}" class="nav-btn">Next: C++ →</a>
+</div>
+
+{% endblock %}

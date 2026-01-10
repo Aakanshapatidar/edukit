@@ -1,0 +1,71 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}R Programming Roadmap{% endblock %}
+
+{% block content %}
+
+<h2>R Programming Roadmap</h2>
+
+<!-- 🔹 R OVERVIEW -->
+<div class="section-box">
+    <h3>Overview</h3>
+    <p>
+        R is a programming language mainly used for statistical analysis,
+        data visualization, and data science. It is widely used in research,
+        analytics, and academic fields.
+    </p>
+</div>
+
+<!-- 🔹 R LEARNING ROADMAP -->
+<div class="section-box">
+    <h3>Learning Roadmap</h3>
+
+    <ul class="roadmap-list">
+        <li>R Basics & Syntax</li>
+        <li>Data Types & Vectors</li>
+        <li>Data Frames & Lists</li>
+        <li>Control Structures</li>
+        <li>Data Visualization (ggplot2)</li>
+        <li>Statistical Analysis</li>
+        <li>Data Cleaning</li>
+        <li>Real-world Data Projects</li>
+    </ul>
+</div>
+
+<!-- 🔹 CAREER STREAMS -->
+<div class="section-box">
+    <h3>Career Streams After R</h3>
+
+    <div class="stream-cards">
+
+        <div class="stream-card">
+            <h4>Data Analyst</h4>
+            <p>Analyze datasets and create reports.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Statistician</h4>
+            <p>Work with statistical models.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Data Scientist</h4>
+            <p>Advanced data modeling & visualization.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Research Analyst</h4>
+            <p>Data-driven research and studies.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- 🔹 NAVIGATION -->
+<div class="slide-nav">
+    <a href="{% url 'sql_roadmap' %}" class="nav-btn">← SQL</a>
+    <a href="{% url 'home' %}" class="nav-btn">Back to Dashboard</a>
+</div>
+
+{% endblock %}

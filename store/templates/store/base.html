@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Edukit{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <img src="{% static 'images/logo.png' %}" class="logo">
+    
+</header>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <a href="{% url 'home' %}" 
+       class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">
+       🏠 Home
+    </a>
+
+    <a href="{% url 'products' %}" 
+       class="{% if request.resolver_match.url_name == 'products' %}active{% endif %}">
+       📦 Products
+    </a>
+
+    <a href="{% url 'analytics' %}" 
+       class="{% if request.resolver_match.url_name == 'analytics' %}active{% endif %}">
+       📊 Analytics
+    </a>
+
+    <a href="{% url 'settings' %}" 
+       class="{% if request.resolver_match.url_name == 'settings' %}active{% endif %}">
+       ⚙ Settings
+    </a>
+   
+
+</aside>
+
+
+
+<!-- MAIN CONTENT (SLIDES) -->
+<main class="content">
+    {% block content %}{% endblock %}
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    © 2026 Edukit
+</footer>
+
+</body>
+</html>

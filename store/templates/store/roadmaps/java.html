@@ -1,0 +1,71 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}Java Roadmap{% endblock %}
+
+{% block content %}
+
+<h2>Java Roadmap</h2>
+
+<!-- 🔹 JAVA OVERVIEW -->
+<div class="section-box">
+    <h3>Overview</h3>
+    <p>
+        Java is a powerful, object-oriented programming language widely used for
+        enterprise applications, backend development, Android apps, and large-scale systems.
+        Its platform independence and strong ecosystem make it a top choice for software engineers.
+    </p>
+</div>
+
+<!-- 🔹 JAVA LEARNING ROADMAP -->
+<div class="section-box">
+    <h3>Learning Roadmap</h3>
+
+    <ul class="roadmap-list">
+        <li>Java Basics (syntax, JVM, data types)</li>
+        <li>Control Statements & Loops</li>
+        <li>Object-Oriented Programming (OOP)</li>
+        <li>Exception Handling & Collections</li>
+        <li>Multithreading & File Handling</li>
+        <li>Frameworks (Spring, Spring Boot)</li>
+        <li>Mini & Major Projects</li>
+    </ul>
+</div>
+
+<!-- 🔹 CAREER STREAMS -->
+<div class="section-box">
+    <h3>Career Streams After Java</h3>
+
+    <div class="stream-cards">
+
+        <div class="stream-card">
+            <h4>Backend Developer</h4>
+            <p>Build scalable server-side applications using Spring Boot.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Android Developer</h4>
+            <p>Develop mobile applications using Java and Android SDK.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Enterprise Software Engineer</h4>
+            <p>Work on large enterprise systems and ERP solutions.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Cloud Engineer</h4>
+            <p>Deploy and manage Java applications on cloud platforms.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- 🔹 NAVIGATION -->
+<div class="slide-nav">
+    <a href="{% url 'python_roadmap' %}" class="nav-btn">← Python</a>
+    <a href="{% url 'home' %}" class="nav-btn">Back to Dashboard</a>
+    <a href="{% url 'c_roadmap' %}" class="nav-btn">Next: C →</a>
+</div>
+
+{% endblock %}

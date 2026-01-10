@@ -1,0 +1,12 @@
+{% if step %}
+  <h2>Step {{ step.order }}</h2>
+  <p>{{ step.title }}</p>
+
+  <form method="post" action="{% url 'complete_step' step.id %}">
+    {% csrf_token %}
+    <button class="btn">I completed this step</button>
+  </form>
+
+{% else %}
+  <h2>🎉 Course Completed!</h2>
+{% endif %}

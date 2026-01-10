@@ -1,0 +1,74 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}React Roadmap{% endblock %}
+
+{% block content %}
+
+<h2>React Roadmap</h2>
+
+<!-- 🔹 REACT OVERVIEW -->
+<div class="section-box">
+    <h3>Overview</h3>
+    <p>
+        React is a popular JavaScript library used to build fast,
+        interactive, and scalable user interfaces. It is widely used
+        in modern web applications such as dashboards, e-commerce sites,
+        and single-page applications (SPAs).
+    </p>
+</div>
+
+<!-- 🔹 REACT LEARNING ROADMAP -->
+<div class="section-box">
+    <h3>Learning Roadmap</h3>
+
+    <ul class="roadmap-list">
+        <li>HTML, CSS & JavaScript Basics</li>
+        <li>ES6 Concepts</li>
+        <li>React Components & JSX</li>
+        <li>Props & State</li>
+        <li>Event Handling</li>
+        <li>Hooks (useState, useEffect)</li>
+        <li>Routing with React Router</li>
+        <li>API Integration</li>
+        <li>Project Development</li>
+    </ul>
+</div>
+
+<!-- 🔹 CAREER STREAMS -->
+<div class="section-box">
+    <h3>Career Streams After React</h3>
+
+    <div class="stream-cards">
+
+        <div class="stream-card">
+            <h4>Frontend Developer</h4>
+            <p>Create interactive and responsive user interfaces.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>UI Developer</h4>
+            <p>Design and implement modern UI layouts.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Full Stack Developer</h4>
+            <p>Work with React along with backend technologies.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Web Application Developer</h4>
+            <p>Build scalable web applications.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- 🔹 NAVIGATION -->
+<div class="slide-nav">
+    <a href="{% url 'cpp_roadmap' %}" class="nav-btn">← C++</a>
+    <a href="{% url 'home' %}" class="nav-btn">Back to Dashboard</a>
+    <a href="{% url 'web_roadmap' %}" class="nav-btn">Next: Web Dev →</a>
+</div>
+
+{% endblock %}

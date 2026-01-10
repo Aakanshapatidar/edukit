@@ -1,0 +1,73 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}SQL Roadmap{% endblock %}
+
+{% block content %}
+
+<h2>SQL Roadmap</h2>
+
+<!-- 🔹 SQL OVERVIEW -->
+<div class="section-box">
+    <h3>Overview</h3>
+    <p>
+        SQL (Structured Query Language) is used to store, retrieve, and analyze data
+        from databases. It is a core skill for Data Analysts, Data Scientists,
+        Backend Developers, and Business Analysts.
+    </p>
+</div>
+
+<!-- 🔹 SQL LEARNING ROADMAP -->
+<div class="section-box">
+    <h3>Learning Roadmap</h3>
+
+    <ul class="roadmap-list">
+        <li>Database Basics & DBMS</li>
+        <li>SELECT, WHERE, ORDER BY</li>
+        <li>Filtering & Sorting Data</li>
+        <li>Aggregate Functions (SUM, COUNT, AVG)</li>
+        <li>GROUP BY & HAVING</li>
+        <li>Joins (INNER, LEFT, RIGHT)</li>
+        <li>Subqueries</li>
+        <li>Indexes & Views</li>
+        <li>Real-world Case Studies</li>
+    </ul>
+</div>
+
+<!-- 🔹 CAREER STREAMS -->
+<div class="section-box">
+    <h3>Career Streams After SQL</h3>
+
+    <div class="stream-cards">
+
+        <div class="stream-card">
+            <h4>Data Analyst</h4>
+            <p>Analyze business data and generate insights.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Data Scientist</h4>
+            <p>Use SQL with Python & ML models.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Backend Developer</h4>
+            <p>Manage databases and APIs.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Business Analyst</h4>
+            <p>Support decisions using data queries.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- 🔹 NAVIGATION -->
+<div class="slide-nav">
+    <a href="{% url 'web_roadmap' %}" class="nav-btn">← Web</a>
+    <a href="{% url 'home' %}" class="nav-btn">Back to Dashboard</a>
+    <a href="{% url 'r_roadmap' %}" class="nav-btn">Next: R →</a>
+</div>
+
+{% endblock %}

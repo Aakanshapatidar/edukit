@@ -1,0 +1,32 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+<div class="auth-container">
+    <div class="auth-box">
+
+        <h2>Welcome Back</h2>
+        <p>Login to continue learning</p>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button type="submit" class="auth-btn">
+              <a href="{% url 'home' %}">
+             Login
+            </button>
+            </a>
+        </form>
+
+        <div class="auth-link">
+            Don’t have an account?
+            <a href="{% url 'signup' %}">Sign up</a>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

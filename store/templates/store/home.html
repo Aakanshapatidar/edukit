@@ -1,0 +1,70 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2>Dashboard</h2>
+
+
+<div class="language-grid">
+
+  <div class="language-card">
+    <img src="{% static 'images/python.png' %}" alt="Python">
+    <h3>Python</h3>
+    <p>Data, AI, Web & Automation</p>
+    <a href="{% url 'python_roadmap' %}" class="roadmap-btn">View Roadmap</a>
+  </div>
+
+  <div class="language-card">
+    <img src="{% static 'images/java.png' %}" alt="Java">
+    <h3>Java</h3>
+    <p>Backend & Enterprise Development</p>
+    <a href="{% url 'java_roadmap' %}" class="roadmap-btn">View Roadmap</a>
+  </div>
+
+  <div class="language-card">
+    <img src="{% static 'images/c.png' %}" alt="C">
+    <h3>C</h3>
+    <p>Core Programming & OS Basics</p>
+    <a href="{% url 'c_roadmap' %}" class="roadmap-btn">View Roadmap</a>
+  </div>
+
+  <div class="language-card">
+    <img src="{% static 'images/cpp.png' %}" alt="C++">
+    <h3>C++</h3>
+    <p>DSA, Competitive Programming</p>
+    <a href="{% url 'cpp_roadmap' %}" class="roadmap-btn">View Roadmap</a>
+  </div>
+
+  <div class="language-card">
+    <img src="{% static 'images/react.png' %}" alt="React">
+    <h3>React</h3>
+    <p>Frontend UI Development</p>
+    <a href="{% url 'react_roadmap' %}" class="roadmap-btn">View Roadmap</a>
+  </div>
+
+  <div class="language-card">
+    <img src="{% static 'images/web.png' %}" alt="Web Dev">
+    <h3>Web Development</h3>
+    <p>HTML, CSS, JS, Backend</p>
+    <a href="{% url 'web_roadmap' %}" class="roadmap-btn">View Roadmap</a>
+  </div>
+
+  <div class="language-card">
+    <img src="{% static 'images/sql.png' %}" alt="SQL">
+    <h3>SQL</h3>
+    <p>Databases & Data Analysis</p>
+    <a href="{% url 'sql_roadmap' %}" class="roadmap-btn">View Roadmap</a>
+  </div>
+
+  <div class="language-card">
+    <img src="{% static 'images/r.png' %}" alt="R">
+    <h3>R Programming</h3>
+    <p>Statistics & Data Science</p>
+    <a href="{% url 'r_roadmap' %}" class="roadmap-btn">View Roadmap</a>
+  </div>
+
+</div>
+
+{% endblock %}

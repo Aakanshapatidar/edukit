@@ -1,0 +1,73 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}Web Development Roadmap{% endblock %}
+
+{% block content %}
+
+<h2>Web Development Roadmap</h2>
+
+<!-- 🔹 WEB OVERVIEW -->
+<div class="section-box">
+    <h3>Overview</h3>
+    <p>
+        Web Development focuses on building websites and web applications
+        using frontend and backend technologies. It includes everything
+        from designing user interfaces to handling databases and servers.
+    </p>
+</div>
+
+<!-- 🔹 WEB LEARNING ROADMAP -->
+<div class="section-box">
+    <h3>Learning Roadmap</h3>
+
+    <ul class="roadmap-list">
+        <li>HTML – Page Structure</li>
+        <li>CSS – Styling & Layout</li>
+        <li>JavaScript – Logic & DOM</li>
+        <li>Responsive Design</li>
+        <li>Frontend Frameworks (React)</li>
+        <li>Backend Basics (Python / Node)</li>
+        <li>Databases (MySQL, MongoDB)</li>
+        <li>Authentication & Security</li>
+        <li>Deployment & Hosting</li>
+    </ul>
+</div>
+
+<!-- 🔹 CAREER STREAMS -->
+<div class="section-box">
+    <h3>Career Streams After Web Development</h3>
+
+    <div class="stream-cards">
+
+        <div class="stream-card">
+            <h4>Frontend Developer</h4>
+            <p>Design interactive and responsive interfaces.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Backend Developer</h4>
+            <p>Manage servers, APIs, and databases.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Full Stack Developer</h4>
+            <p>Handle both frontend and backend.</p>
+        </div>
+
+        <div class="stream-card">
+            <h4>Web Designer</h4>
+            <p>Focus on UI/UX and visual design.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- 🔹 NAVIGATION -->
+<div class="slide-nav">
+    <a href="{% url 'react_roadmap' %}" class="nav-btn">← React</a>
+    <a href="{% url 'home' %}" class="nav-btn">Back to Dashboard</a>
+    <a href="{% url 'sql_roadmap' %}" class="nav-btn">Next: SQL →</a>
+</div>
+
+{% endblock %}
