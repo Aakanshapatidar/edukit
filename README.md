@@ -1,5 +1,3 @@
-﻿# edukit
-
 # Edukit 🎓
 
 Edukit is a **Django-based learning roadmap platform** designed to help students and beginners follow structured learning paths across multiple technologies like **Python, Java, C, C++, Web Development, React, SQL, and R**.
@@ -133,4 +131,5 @@ This project demonstrates:
 ---
 
 ⭐ If you like this project, give it a star on GitHub!
+
 
