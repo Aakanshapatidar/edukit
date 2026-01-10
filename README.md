@@ -78,22 +78,26 @@ edukit/
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](Screenshot 2026-01-10 222025.png)
+![Dashboard](store/static/images/dashboard.png)
+
+### Products
+![Products](store/static/images/prodv.png)
+
+### Analytics
+![Analytics](store/static/images/anav.png)
+
+
+### Settings
+![Settings](store/static/images/setv.png)
+
+
 
 ### Python Roadmap
-![Python Roadmap](Screenshot 2026-01-10 222038.png)
+![Python Roadmap](store/static/images/pythonv.png)
 
 ### Java Roadmap
-![Java Roadmap](Screenshot 2026-01-10 222054.png)
+![Java Roadmap](store/static/images/javav.png)
 
-### Analytics Dashboard
-![Analytics](Screenshot 2026-01-10 222103.png)
-
-### Settings Page
-![Settings](Screenshot 2026-01-10 222114.png)
-
-### Products Page
-![Products](Screenshot 2026-01-10 222128.png)
 
 ---
 
