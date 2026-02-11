@@ -6,7 +6,7 @@ The project focuses on **clean UI, clear learning roadmaps, user progress tracki
 
 ---
 
-## 🚀 Features
+## Features
 
 - 🔐 User Authentication (Login / Signup / Logout)
 - 📚 Course-based Learning Roadmaps
@@ -19,7 +19,7 @@ The project focuses on **clean UI, clear learning roadmaps, user progress tracki
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend:** Django (Python)
 - **Frontend:** HTML, CSS
@@ -28,7 +28,7 @@ The project focuses on **clean UI, clear learning roadmaps, user progress tracki
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 edukit/
@@ -74,7 +74,7 @@ edukit/
 └── README.md
 ```
 
-## 📸 Screenshots
+## Screenshots
 
 ### Dashboard
 ![Dashboard](store/static/images/dashboard.png)
@@ -100,7 +100,7 @@ edukit/
 
 ---
 
-## 📈 Analytics Included
+## Analytics Included
 
 - Total Users
 - Active Courses
@@ -108,7 +108,7 @@ edukit/
 
 ---
 
-## 🧠 Learning Outcomes
+## Learning Outcomes
 
 This project demonstrates:
 - Django URL routing & views
@@ -121,7 +121,7 @@ This project demonstrates:
 ---
 
 
-## 👩‍💻 Author
+## Author
 
 **Aakansha Patidar**  
   
@@ -130,6 +130,7 @@ This project demonstrates:
 
 ---
 
-⭐ If you like this project, give it a star on GitHub!
+ If you like this project, give it a star on GitHub!
+
 
 
